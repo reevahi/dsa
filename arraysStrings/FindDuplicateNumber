@@ -1,0 +1,29 @@
+/*
+Brute force is to just sort the array and find out the duplicate
+Most optimal approach is using fast and slow pointer also known as
+Floyd's hare and tortoise algorithm, In this we visuavalize the array
+as a linked list and then we say that the current element value is the next index
+we have to go, so fast pointer will travel 2 nodes distance while slow will
+travel only one unit at a time until they meet at a same node, then we put slow or
+fast pointer at start and then the slow and fast traverse at 1 unit and where they meet 
+will be the duplicate number. Its proof has been written in the notebook please find
+link: https://leetcode.com/problems/minimum-size-subarray-sum/
+*/
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        int s = nums[0];
+        int f = nums[0];
+        do{
+            s = nums[s];
+            f = nums[nums[f]];
+        }
+        while(s!=f);
+        s = nums[0];
+        while(s!=f){
+            s=nums[s];
+            f=nums[f];
+        }
+        return s;
+    }
+};
