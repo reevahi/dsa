@@ -1,0 +1,6 @@
+2 Point
+1) Client to backend -> Akami, Load balancer
+2) DB -> sharing & replication & partitioning
+3) Caching logic -> SortedSet, hasing
+DB -> Inno DB vs MongoDB wired tiger engine
+5) MySql Index
