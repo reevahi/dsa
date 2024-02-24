@@ -1,0 +1,43 @@
+We made these specific assumptions to add a bit of complexity to the problem without adding too much. 
+ If you made different assumptions, that’s totally fine. 
+ 1) The parking lot has multiple levels. Each level has multiple rows of spots. 
+ 2) The parking lot can park motorcycles, cars, and buses. 
+ 3) The parking lot has motorcycle spots, compact spots, and large spots.
+4) A motorcycle can park in any spot. 
+5) A car can park in either a single compact spot or a single large spot.
+
+
+LLD---------------------
+abstract class vehicle{
+    private String vehicleNumber;
+    private String color;
+    private String manufacturerName;
+    private String modelName;
+
+
+    public abstract String printBill();
+}
+
+public class car extends vehicle{
+    private final int carFare = 10;
+    private int totalMinutes = 0;
+    public String printBill(){
+        return "Car number " + this.vehicleNumber + " Need to pay " + this.carFare * this.totalMinutes;
+    }
+}
+
+public class motorcycle extends vehicle{
+    private final int motorcycleFare = 2;
+    private int totalMinutes = 0;
+    public String printBill(){
+        return "motorcycle number " + this.vehicleNumber + " Need to pay " + this.motorcycleFare * this.totalMinutes;
+    }
+}
+
+public class bus extends vehicle{
+    private final int busFare = 20;
+    private int totalMinutes = 0;
+    public String printBill(){
+        return "bus number " + this.vehicleNumber + " Need to pay " + this.busFare * this.totalMinutes;
+    }
+}
