@@ -3,6 +3,6 @@
 2) DB -> sharing & replication & partitioning
 3) Caching logic -> SortedSet, hasing
 DB -> Inno DB vs MongoDB wired tiger engine
-5) MySql Index
+5) MySql Index  -> https://www.youtube.com/watch?v=EQbhKjBmW
 
 https://www.geeksforgeeks.org/designing-content-delivery-network-cdn-system-design/#requirements-for-content-delivery-networkcdn

@@ -1,0 +1,44 @@
+Ability to select an item.
+Ability to pay for an item
+(Ask the interviewer which mode of payment they prefer.
+ In this example, we will stick with cash payment.
+Dispense the item once payment is made.
+Notify the owner (serving agent) about inventory data. 
+in case the vending machine runs low on any of the items,
+ the owner can refill that item in the vending machine.
+
+
+
+ public class Item{
+    private int itemCode;
+    private String name;
+    private int mrp;
+    private Date expiry;
+}
+
+@entity
+public class InventoryInfo{
+    private int itemCode;
+    private int stock;
+}
+
+public class payment{
+    private int receiptNo;
+    private amout;
+    private HashMap<itemCode,int> itemList;
+}
+
+void addStock(int itemCode, int stock){
+    InventoryInfo temp = new InventoryInfo(itemCode,stock);
+    save(temp);
+}
+
+void selectItem(HashMap<int,int> itemsList){
+    //validate that items are in stock if not return the itemName to the user and the available stock
+}
+
+
+
+void payForItem(HashMap<int,int> itemsList){
+    //pay for the items and alert the seller for low stocks
+}
