@@ -1,0 +1,41 @@
+User database
+    |
+userId
+userName
+name
+password
+
+followerInfo
+userId
+List<int> followers
+
+followingInfo
+userId
+List<int> following
+
+Media database
+mediaId
+title
+caption
+likes
+List<String> comments;
+
+search{
+    //will retrieve top 10 posts based on searched title, will use pagination
+}
+
+follow{
+    //will increase follower for the other person and following for the first person
+}
+
+upload/download{
+    //will upload the media to servers and make an entry in the media table
+    //download will fetch the media from the server to user local storage
+}
+
+view{
+    //will fetch the media likes/comments and display in the view
+}
+
+indexing on userId and mediaId
+for media we will use nosql while for user we will use sql
