@@ -1,0 +1,52 @@
+Requirements
+Prioritized requirements
+System should store all the relevant profile data like name, age, location, and profile images.
+Users should be recommended matches based on their previous choices.
+System should store the details when a match occurs.
+System should allow for direct messaging between two users if they have matches.
+Requirement 1: Profile creation, authentication, and storage
+1) User, 2) Chat, 3) Matches 4) Prev choice
+8:21
+
+
+--------------------------------------
+
+
+public class User{
+    int id;
+    String name;
+    String lat;
+    String long;
+    int age;
+    GenderEnum gender;
+    String password;
+    String email;
+    String mobileNo;
+    String imageUrl;
+}
+
+//No Sql
+public class Match{
+    int userId;
+    int swipeUserId;
+    String status;
+}
+
+void swipe(Boolean decision,User u, int user2Id){
+    //check if User from user2Id has already swipe right on current user2Id
+    //If yes then push payload into kafka to trigger a service to display the match in the users app
+    //If no then we simply put the entry in Match DB
+    //Feed the ML recommendation system the profile details, to give suggestions of same profile
+}
+
+List<User> displayMatchedProfiles(User user){
+    List<User> = dataservice.findAllById(id1,id2,id3,....);
+    //cache it on the client device
+    //refresh it every time the user manually swipes from top or when the app is opened after closing // logic on frontend
+
+}
+
+void createProfile(User user){
+    validateUser(user);
+    dataservice.saveAll(user);
+}

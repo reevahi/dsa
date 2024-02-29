@@ -1,3 +1,6 @@
+/*
+@author github.com/iitzmahi
+*/
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
