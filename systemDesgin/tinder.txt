@@ -32,6 +32,20 @@ public class Match{
     String status;
 }
 
+public class MessageService{
+    User sender;
+    User receiver;
+
+    public MessageService(User sender,User receiver){
+        this.sender = sender;
+        this.receiver = receiver;
+    }
+
+    void sendMessage(String message){
+        
+    }
+}
+
 void swipe(Boolean decision,User u, int user2Id){
     //check if User from user2Id has already swipe right on current user2Id
     //If yes then push payload into kafka to trigger a service to display the match in the users app
@@ -50,3 +64,4 @@ void createProfile(User user){
     validateUser(user);
     dataservice.saveAll(user);
 }
+

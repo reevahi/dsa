@@ -1,0 +1,207 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modified Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (07/04/2020)
+% 
+% Author
+% Apurv Mishra(https://apurvmishra.xyz)
+% Repository
+% https://github.com/apurvmishra99/Modified-Deedy-Resume
+% Original author of Deedy Resume:
+% Debarghya Das (http://debarghyadas.com)
+% His repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+%
+
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Mahipal Singh}{Chouhan}{ 
+\href{mailto:kryptokan@gmail.com}{\bf kryptokan@gmail.com} | \bf +91 8696840675} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.66\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{National Institute of Technology (NIT),}
+\subsection{Kurukshetra}
+\descript{Bachelor of Technology Computer Science}
+\location{July \textbf{2018 } - \textbf{July 2022} | Kurukshetra, India}
+\textbf{CGPA: 8.4}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\subsection{Paytm Group}
+\runsubsection{UPI}
+\descript{| Backend Developer }
+\location{Dec \textbf{2022 } – Present | Noida, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Successfully scaled the UPI backend transactions system using cluster-based architecture, improving system performance and scalability.
+\item Implemented innovative strategies for optimizing check status request handling, resulting in reduced response times and improved user experience.
+\item Contributed to enhanced system reliability and resource utilization through efficient routing of requests to different clusters.
+\item Led the development of an archiving microservice, facilitating efficient management of historical transaction data and improving database performance.
+\item Drastically improved code robustness and coverage by writing comprehensive JUnit tests, enhancing overall system stability and reliability. Increased code coverage from 15 to almost 70 percent.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{FasTag}
+\descript{| Backend Developer }
+\location{July \textbf{2022 } – Dec 2022 | Noida, India}
+\begin{tightemize}
+\item During my tenure with the Paytm FasTag team, I served as a Java backend developer , specializing in crafting efficient solutions within a dynamic environment. My role involved harnessing the power of technologies like Kafka , Spring Boot , and MySQL to streamline processes and enhance system performance.
+\item Improved scalability, enabling efficient processing of high-volume asynchronous requests. 
+\item Notably, I migrated asynchronous function calls to synchronous behavior using Kafka event-driven architecture, enhancing reliability and scalability.
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{SRM GPA CALCULATOR}
+\descript{| Flutter, Dart }
+\location{July \textbf{2020 }}
+\begin{tightemize}
+\item Created a cross-platform mobile application Specifically built for students studying in SRM University. The App has over 4K+ Downloads on Google Playstore Developed using the Flutter Framework. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{PROPERTY RENTAL APP (DAPP)}
+\descript{| Solidity, Web3.js, React.js, Ethereum blockchain}
+\location{Jan \textbf{2022 }}
+\begin{tightemize}
+\item Developed a decentralized web application for property rental management, leveraging web3.js to establish seamless connectivity with the Ethereum blockchain. Utilized Solidity programming language to craft smart contracts, ensuring secure and transparent property transactions.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{\textbf{Over 10000 lines:}}
+Python \textbullet{} Java \textbullet{} C/C++ \\ 
+\location{\textbf{Frameworks and Technologies Used:}}
+Spring boot \textbullet{} Flutter \textbullet{} MySQL \\
+Apache Kafka \textbullet{} Spring MVC \\
+Spring JPA \textbullet{} Spring Security \\
+\subsection{Tools}
+Git \textbullet{} GitHub \textbullet{}Jenkins \textbullet{} Jira \textbullet{}
+Grafana Kibana \textbullet{}Postman \textbullet{} Docker
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
+\sectionsep
+\sectionsep
+\section{Coursework}
+Algorithms and Data Structures \\
+Software Testing \\
+DBMS \\
+Computer Networks \\
+OOPs Programming \\
+Operating System \\
+Linear Algebra \\
+Design and Analysis of Algorithms \\
+Distributed Computing \\
+Information Security \\
+\sectionsep
+\sectionsep
+\sectionsep
+
+\section{POSITION OF RESPONSIBILITY}
+\location{\textbf{Member (Technobyte):}}
+ Designed and Organised various coding \\
+ competition for college fests. \\
+\location{\textbf{Member (Eunoia): }}
+Designed over 3 editions of Eunoia 
+(Official magazine of NIT Kurukshetra). \\
+\sectionsep
+\sectionsep
+\sectionsep
+
+\section{Links}
+\urlstyle{same}\href{https://github.com/iitzmahi/}{\bf GitHub://iitzmahi}
+\\
+\urlstyle{same}\href{https://www.linkedin.com/in/iitzmahi}{\bf Linkedin://iitzmahi}
+\end{minipage}%
+\end{document}  
+\documentclass[]{article}
