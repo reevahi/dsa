@@ -1,10 +1,6 @@
 /*
 @author github.com/iitzmahi
 */
-
-/*
-@author github.com/iitzmahi
-*/
 class Solution {
     void dfs(vector<int> adj[], unordered_set<int>& vis,
              unordered_set<int>& path, int i, bool& cycle, stack<int>& st) {
